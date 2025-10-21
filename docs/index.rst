@@ -1,5 +1,0 @@
-=====================
-redturtle.reactbundle
-=====================
-
-User documentation
