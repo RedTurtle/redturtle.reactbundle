@@ -1,0 +1,30 @@
+{
+  "name": "collective.editablemenu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/RedTurtle/collective.editablemenu.git",
+  "author": "RedTurtle <sviluppoplone@redturtle.it>",
+  "license": "GPL-2.0",
+  "devDependencies": {
+    "@babel/core": "^7.28.4",
+    "@babel/eslint-parser": "^7.22.15",
+    "@babel/preset-env": "^7.28.3",
+    "@babel/preset-react": "^7.27.1",
+    "autoprefixer": "^10.4.16",
+    "babel-loader": "^10.0.0",
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "prettier": "^3.0.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "scripts": {
+    "build": "webpack --mode=production",
+    "start": "webpack --mode=development --watch"
+  }
+}

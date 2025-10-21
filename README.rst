@@ -2,16 +2,6 @@
    If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
    This text does not appear on PyPI or github. It is a comment.
 
-.. image:: https://github.com/collective/redturtle.reactbundle/actions/workflows/plone-package.yml/badge.svg
-    :target: https://github.com/collective/redturtle.reactbundle/actions/workflows/plone-package.yml
-
-.. image:: https://coveralls.io/repos/github/collective/redturtle.reactbundle/badge.svg?branch=main
-    :target: https://coveralls.io/github/collective/redturtle.reactbundle?branch=main
-    :alt: Coveralls
-
-.. image:: https://codecov.io/gh/collective/redturtle.reactbundle/branch/master/graph/badge.svg
-    :target: https://codecov.io/gh/collective/redturtle.reactbundle
-
 .. image:: https://img.shields.io/pypi/v/redturtle.reactbundle.svg
     :target: https://pypi.python.org/pypi/redturtle.reactbundle/
     :alt: Latest Version
@@ -20,45 +10,35 @@
     :target: https://pypi.python.org/pypi/redturtle.reactbundle
     :alt: Egg Status
 
-.. image:: https://img.shields.io/pypi/pyversions/redturtle.reactbundle.svg?style=plastic   :alt: Supported - Python Versions
-
 .. image:: https://img.shields.io/pypi/l/redturtle.reactbundle.svg
     :target: https://pypi.python.org/pypi/redturtle.reactbundle/
     :alt: License
 
 
-=====================
-redturtle.reactbundle
-=====================
+======================
+RedTurtle React Bundle
+======================
 
 Addon that add React into Classic UI
 
 Features
 --------
 
-- Can be bullet points
+- Install it and have React and ReactDOM available in your Plone Classic UI as bundle.
 
 
-Examples
---------
+React version
+--------------
 
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
+- React 19.2.0
 
+Development
+-----------
 
-Documentation
--------------
+If you need to update React version, just run::
 
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
-
-Translations
-------------
-
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
-
+    > npm install react@latest react-dom@latest
+    > npm run build
 
 Installation
 ------------
@@ -76,33 +56,21 @@ Install redturtle.reactbundle by adding it to your buildout::
 and then running ``bin/buildout``
 
 
-Authors
--------
-
-Provided by awesome people ;)
-
-
-Contributors
-------------
-
-Put your name here, you deserve it!
-
-- ?
-
-
 Contribute
 ----------
 
-- Issue Tracker: https://github.com/collective/redturtle.reactbundle/issues
-- Source Code: https://github.com/collective/redturtle.reactbundle
-- Documentation: https://docs.plone.org/foo/bar
+- Issue Tracker: https://github.com/RedTurtle/redturtle.reactbundle/issues
+- Source Code: https://github.com/RedTurtle/redturtle.reactbundle
 
 
-Support
+Authors
 -------
 
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
+This product was developed by RedTurtle Technology team.
+
+.. image:: https://avatars1.githubusercontent.com/u/1087171?s=100&v=4
+   :alt: RedTurtle Technology Site
+   :target: http://www.redturtle.it/
 
 
 License

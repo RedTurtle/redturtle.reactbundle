@@ -1,12 +1,9 @@
-# -*- coding: utf-8 -*-
 from plone.app.robotframework.testing import REMOTE_LIBRARY_BUNDLE_FIXTURE
-from plone.app.testing import (
-    applyProfile,
-    FunctionalTesting,
-    IntegrationTesting,
-    PLONE_FIXTURE,
-    PloneSandboxLayer,
-)
+from plone.app.testing import applyProfile
+from plone.app.testing import FunctionalTesting
+from plone.app.testing import IntegrationTesting
+from plone.app.testing import PLONE_FIXTURE
+from plone.app.testing import PloneSandboxLayer
 from plone.testing import z2
 
 import redturtle.reactbundle
@@ -21,13 +18,15 @@ class RedturtleReactbundleLayer(PloneSandboxLayer):
         # The z3c.autoinclude feature is disabled in the Plone fixture base
         # layer.
         import plone.app.dexterity
+
         self.loadZCML(package=plone.app.dexterity)
         import plone.restapi
+
         self.loadZCML(package=plone.restapi)
         self.loadZCML(package=redturtle.reactbundle)
 
     def setUpPloneSite(self, portal):
-        applyProfile(portal, 'redturtle.reactbundle:default')
+        applyProfile(portal, "redturtle.reactbundle:default")
 
 
 REDTURTLE_REACTBUNDLE_FIXTURE = RedturtleReactbundleLayer()
@@ -35,13 +34,13 @@ REDTURTLE_REACTBUNDLE_FIXTURE = RedturtleReactbundleLayer()
 
 REDTURTLE_REACTBUNDLE_INTEGRATION_TESTING = IntegrationTesting(
     bases=(REDTURTLE_REACTBUNDLE_FIXTURE,),
-    name='RedturtleReactbundleLayer:IntegrationTesting',
+    name="RedturtleReactbundleLayer:IntegrationTesting",
 )
 
 
 REDTURTLE_REACTBUNDLE_FUNCTIONAL_TESTING = FunctionalTesting(
     bases=(REDTURTLE_REACTBUNDLE_FIXTURE,),
-    name='RedturtleReactbundleLayer:FunctionalTesting',
+    name="RedturtleReactbundleLayer:FunctionalTesting",
 )
 
 
@@ -51,5 +50,5 @@ REDTURTLE_REACTBUNDLE_ACCEPTANCE_TESTING = FunctionalTesting(
         REMOTE_LIBRARY_BUNDLE_FIXTURE,
         z2.ZSERVER_FIXTURE,
     ),
-    name='RedturtleReactbundleLayer:AcceptanceTesting',
+    name="RedturtleReactbundleLayer:AcceptanceTesting",
 )
